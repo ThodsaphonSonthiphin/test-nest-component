@@ -2,6 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+interface IUser{
+  name:string;
+}
+
+function MyNestTag(prop:IUser) {
+  return null;
+}
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +26,9 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+          <MyNestTag name={"aa"}></MyNestTag>
+        </div>
       </header>
     </div>
   );
